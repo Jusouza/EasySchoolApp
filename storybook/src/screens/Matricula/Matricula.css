@@ -1,0 +1,43 @@
+.matricula-header-extra {
+  padding: 0 var(--space-5) var(--space-5);
+}
+
+.restore-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--color-soft-agenda);
+  color: var(--color-accent-agenda);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-support-size);
+}
+.restore-banner strong {
+  display: block;
+  font-weight: var(--weight-bold);
+  color: var(--color-accent-agenda);
+}
+.restore-banner span {
+  color: var(--color-text-2);
+}
+
+.matricula-footer {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: auto;
+}
+.matricula-footer > * {
+  flex: 1;
+}
+
+.saved-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  font-size: var(--text-caption-size);
+  font-weight: var(--weight-semibold);
+}

@@ -1,0 +1,106 @@
+/*
+  EasySchool · ClipEscola — Design tokens: Tipografia
+  Titillium Web em todo o produto. Inter só onde o texto é técnico e precisa
+  de leitura caractere a caractere (relógio da status bar, código Pix, hex).
+*/
+:root {
+  --font-family: 'Titillium Web', 'Segoe UI', sans-serif;
+  --font-family-mono: 'Inter', 'Segoe UI', sans-serif;
+
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* size / weight / line-height */
+  --text-display-size: 30px;
+  --text-display-weight: var(--weight-bold);
+  --text-display-line: 1.1;
+
+  --text-screen-title-size: 20px;
+  --text-screen-title-weight: var(--weight-bold);
+  --text-screen-title-line: 1.2;
+
+  --text-greeting-size: 26px;
+  --text-greeting-weight: var(--weight-bold);
+  --text-greeting-line: 1.2;
+
+  --text-section-title-size: 17px;
+  --text-section-title-weight: var(--weight-bold);
+  --text-section-title-line: 1.3;
+
+  --text-card-title-size: 15px;
+  --text-card-title-weight: var(--weight-bold);
+  --text-card-title-line: 1.25;
+
+  --text-body-size: 14px;
+  --text-body-weight: var(--weight-regular);
+  --text-body-line: 1.45;
+
+  --text-body-strong-size: 14px;
+  --text-body-strong-weight: var(--weight-semibold);
+  --text-body-strong-line: 1.4;
+
+  --text-support-size: 13px;
+  --text-support-weight: var(--weight-regular);
+  --text-support-line: 1.4;
+
+  --text-caption-size: 12px;
+  --text-caption-weight: var(--weight-regular);
+  --text-caption-line: 1.35;
+
+  --text-micro-size: 11px;
+  --text-micro-weight: var(--weight-semibold);
+  --text-micro-line: 1.3;
+}
+
+.text-display {
+  font-size: var(--text-display-size);
+  font-weight: var(--text-display-weight);
+  line-height: var(--text-display-line);
+}
+.text-screen-title {
+  font-size: var(--text-screen-title-size);
+  font-weight: var(--text-screen-title-weight);
+  line-height: var(--text-screen-title-line);
+}
+.text-greeting {
+  font-size: var(--text-greeting-size);
+  font-weight: var(--text-greeting-weight);
+  line-height: var(--text-greeting-line);
+}
+.text-section-title {
+  font-size: var(--text-section-title-size);
+  font-weight: var(--text-section-title-weight);
+  line-height: var(--text-section-title-line);
+}
+.text-card-title {
+  font-size: var(--text-card-title-size);
+  font-weight: var(--text-card-title-weight);
+  line-height: var(--text-card-title-line);
+}
+.text-body {
+  font-size: var(--text-body-size);
+  font-weight: var(--text-body-weight);
+  line-height: var(--text-body-line);
+}
+.text-body-strong {
+  font-size: var(--text-body-strong-size);
+  font-weight: var(--text-body-strong-weight);
+  line-height: var(--text-body-strong-line);
+}
+.text-support {
+  font-size: var(--text-support-size);
+  font-weight: var(--text-support-weight);
+  line-height: var(--text-support-line);
+}
+.text-caption {
+  font-size: var(--text-caption-size);
+  font-weight: var(--text-caption-weight);
+  line-height: var(--text-caption-line);
+}
+.text-micro {
+  font-size: var(--text-micro-size);
+  font-weight: var(--text-micro-weight);
+  line-height: var(--text-micro-line);
+  text-transform: none;
+}

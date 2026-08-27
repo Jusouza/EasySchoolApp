@@ -1,0 +1,27 @@
+.header-segmented {
+  display: flex;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-pill);
+  padding: 4px;
+  margin: 0 var(--space-5) var(--space-5);
+}
+
+.header-segmented__item {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: #ffffff;
+  font-family: var(--font-family);
+  font-size: var(--text-support-size);
+  font-weight: var(--weight-bold);
+  cursor: pointer;
+}
+
+.header-segmented__item--active {
+  background: #ffffff;
+  color: var(--color-green);
+}

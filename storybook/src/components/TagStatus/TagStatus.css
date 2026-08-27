@@ -1,0 +1,58 @@
+.tag-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-family);
+  font-size: var(--text-micro-size);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.tag-status__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.tag-status--aguardando {
+  background: var(--color-soft-clippag);
+}
+.tag-status--aguardando .tag-status__dot {
+  background: var(--color-yellow);
+}
+
+.tag-status--pago {
+  background: var(--color-soft-entrada-saida);
+  color: var(--color-green-dark);
+}
+.tag-status--pago .tag-status__dot {
+  background: var(--color-success);
+}
+
+.tag-status--aberto {
+  background: var(--color-open-soft);
+}
+.tag-status--aberto .tag-status__dot {
+  background: var(--color-orange);
+}
+
+.tag-status--expirado {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+.tag-status--expirado .tag-status__dot {
+  background: var(--color-danger);
+}
+
+.tag-status--rascunho {
+  background: var(--color-soft-agenda);
+  color: var(--color-accent-agenda);
+}
+.tag-status--rascunho .tag-status__dot {
+  display: none;
+}

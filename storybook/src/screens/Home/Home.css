@@ -1,0 +1,182 @@
+.home-header {
+  background: var(--color-green);
+  color: #ffffff;
+  padding: 0 var(--space-5) var(--space-6);
+  border-radius: 0 0 var(--radius-header) var(--radius-header);
+  font-family: var(--font-family);
+}
+
+.home-header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+}
+
+.home-header__icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+}
+
+.home-header__icon-btn--light {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.home-header__notif-dot {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-orange);
+  border: 1.5px solid var(--color-green);
+}
+
+.home-header__logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+.home-header__logo span {
+  color: var(--color-yellow);
+  font-style: italic;
+}
+
+.home-header__greeting {
+  font-size: var(--text-greeting-size);
+  font-weight: var(--weight-bold);
+  line-height: var(--text-greeting-line);
+  margin-bottom: 2px;
+}
+
+.home-header__date {
+  font-size: var(--text-caption-size);
+  opacity: 0.85;
+  margin-bottom: var(--space-4);
+}
+
+.home-header__student {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-pill);
+  padding: 8px 14px 8px 8px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  color: #ffffff;
+}
+
+.home-header__student-info {
+  flex: 1;
+  text-align: left;
+}
+.home-header__student-name {
+  font-size: var(--text-body-strong-size);
+  font-weight: var(--weight-bold);
+}
+.home-header__student-group {
+  font-size: var(--text-caption-size);
+  opacity: 0.85;
+}
+
+.home-quick-actions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.home-quick-action {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 48px;
+  border-radius: var(--radius-pill);
+  border: none;
+  font-family: var(--font-family);
+  font-size: var(--text-support-size);
+  font-weight: var(--weight-bold);
+  cursor: pointer;
+}
+.home-quick-action--chegando {
+  background: var(--color-soft-clips);
+  color: var(--color-orange);
+}
+.home-quick-action--whatsapp {
+  background: var(--color-soft-entrada-saida);
+  color: var(--color-green);
+}
+
+.home-resume-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-soft-agenda);
+  border: 1.5px solid var(--color-accent-agenda);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.home-resume-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-accent-agenda);
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.home-resume-card__title {
+  font-size: var(--text-body-strong-size);
+  font-weight: var(--weight-bold);
+  color: var(--color-text);
+}
+.home-resume-card__subtitle {
+  font-size: var(--text-caption-size);
+  color: var(--color-text-2);
+}
+
+.home-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-section-title h2 {
+  font-size: var(--text-section-title-size);
+  font-weight: var(--weight-bold);
+  margin: 0;
+}
+
+.home-module-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.home-module-grid .module-card {
+  width: 100%;
+}
+
+.home-footer {
+  text-align: center;
+  font-size: 11px;
+  color: var(--color-text-3);
+  margin-top: var(--space-2);
+}

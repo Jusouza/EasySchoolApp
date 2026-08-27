@@ -1,0 +1,23 @@
+@import './fonts-embedded.css';
+@import './colors.css';
+@import './typography.css';
+@import './spacing.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}

@@ -1,0 +1,30 @@
+/*
+  EasySchool · ClipEscola — Espaçamento, forma e profundidade
+  Espaçamento em múltiplos de 4. Toda tela tem 20pt de padding lateral
+  aplicado uma única vez no wrapper.
+*/
+:root {
+  --space-1: 4px;  /* rótulo e valor */
+  --space-2: 8px;  /* ícone e texto */
+  --space-3: 12px; /* entre cards */
+  --space-4: 16px; /* padding de card */
+  --space-5: 20px; /* padding da tela */
+  --space-6: 24px; /* entre blocos */
+  --space-7: 32px; /* entre seções */
+
+  /* Raios de canto */
+  --radius-sm: 10px;  /* chips e tags */
+  --radius-field: 14px; /* campos e badges */
+  --radius-md: 16px;  /* blocos internos */
+  --radius-card: 20px; /* cards e módulos */
+  --radius-header: 26px; /* header e bottom sheet */
+  --radius-pill: 999px; /* pílula: botões e tab bar */
+
+  /* Profundidade */
+  --elevation-0: none;
+  --elevation-1: 0 6px 20px rgba(var(--shadow-color), 0.08);
+  --elevation-2: 0 8px 24px rgba(var(--shadow-color), 0.25);
+
+  /* Alvo mínimo de toque */
+  --touch-target-min: 44px;
+}

@@ -1,0 +1,23 @@
+.phone-frame {
+  width: 390px;
+  min-height: 500px;
+  background: var(--color-bg);
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.phone-frame__content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-5);
+}
+
+.phone-frame__tabbar {
+  position: sticky;
+  bottom: 0;
+  padding: 0 var(--space-4) 14px;
+}

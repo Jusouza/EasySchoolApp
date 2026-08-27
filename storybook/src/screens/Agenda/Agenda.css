@@ -1,0 +1,70 @@
+.agenda-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-soft-entrada-saida);
+  color: var(--color-green-dark);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-support-size);
+  font-weight: var(--weight-semibold);
+}
+
+.agenda-section-title {
+  font-size: var(--text-section-title-size);
+  font-weight: var(--weight-bold);
+}
+
+.conversation-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  width: 100%;
+  padding: var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-family);
+  position: relative;
+}
+
+.conversation-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.conversation-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.conversation-card__name {
+  font-size: var(--text-body-strong-size);
+  font-weight: var(--weight-bold);
+  color: var(--color-text);
+}
+
+.conversation-card__description {
+  font-size: var(--text-caption-size);
+  color: var(--color-text-2);
+  margin: 2px 0;
+}
+
+.conversation-card__last {
+  font-size: var(--text-body-size);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text);
+}
+
+.conversation-card__badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}

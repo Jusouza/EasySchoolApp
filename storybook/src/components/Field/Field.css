@@ -1,0 +1,90 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: var(--font-family);
+  width: 100%;
+}
+
+.field__label {
+  font-size: var(--text-caption-size);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text);
+}
+
+.field__control {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 52px;
+  padding: 0 var(--space-4);
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-line);
+  border-radius: var(--radius-field);
+}
+
+.field__control--textarea {
+  height: auto;
+  min-height: 84px;
+  padding: var(--space-3) var(--space-4);
+  align-items: flex-start;
+}
+
+.field__control:focus-within {
+  border-color: var(--color-green);
+  border-width: 2px;
+}
+
+.field--error .field__control {
+  border-color: var(--color-danger);
+}
+
+.field--disabled .field__control {
+  background: var(--color-bg);
+  color: var(--color-text-3);
+}
+
+.field__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--font-family);
+  font-size: var(--text-body-size);
+  color: var(--color-text);
+  width: 100%;
+  resize: none;
+}
+
+.field__input::placeholder {
+  color: var(--color-text-3);
+}
+
+.field__input:disabled {
+  color: var(--color-text-3);
+  cursor: not-allowed;
+}
+
+.field__icon {
+  color: var(--color-text-2);
+  flex-shrink: 0;
+  display: flex;
+}
+
+.field__status-icon--success {
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+.field__status-icon--error {
+  color: var(--color-danger);
+  flex-shrink: 0;
+}
+
+.field__helper {
+  font-size: var(--text-caption-size);
+  color: var(--color-text-2);
+}
+
+.field__helper--error {
+  color: var(--color-danger);
+}

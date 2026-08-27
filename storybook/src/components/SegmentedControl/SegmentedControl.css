@@ -1,0 +1,31 @@
+.segmented__label {
+  font-family: var(--font-family);
+  font-size: var(--text-caption-size);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+
+.segmented {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.segmented__option {
+  flex: 1;
+  height: 48px;
+  border-radius: var(--radius-field);
+  border: 1.5px solid var(--color-line);
+  background: var(--color-surface);
+  font-family: var(--font-family);
+  font-size: var(--text-body-size);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.segmented__option--selected {
+  background: var(--color-green);
+  border-color: var(--color-green);
+  color: #ffffff;
+}

@@ -1,0 +1,23 @@
+.header-tabs {
+  display: flex;
+  gap: var(--space-5);
+  padding: 0 var(--space-5) var(--space-4);
+}
+
+.header-tabs__item {
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font-family);
+  font-size: var(--text-body-size);
+  font-weight: var(--weight-semibold);
+  padding-bottom: 8px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.header-tabs__item--active {
+  color: #ffffff;
+  font-weight: var(--weight-bold);
+  border-bottom-color: var(--color-yellow);
+}

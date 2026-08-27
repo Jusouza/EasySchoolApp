@@ -1,0 +1,106 @@
+.perfil-screen {
+  width: 390px;
+  height: 844px;
+  border-radius: 44px;
+  overflow: hidden;
+  background: var(--color-surface);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.28);
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil-header {
+  background: var(--color-green);
+  color: #ffffff;
+  padding: 0 var(--space-5) var(--space-6);
+  border-radius: 0 0 var(--radius-header) var(--radius-header);
+  position: relative;
+  font-family: var(--font-family);
+}
+
+.perfil-close {
+  position: absolute;
+  top: 56px;
+  right: var(--space-5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.perfil-name {
+  font-size: var(--text-section-title-size);
+  font-weight: var(--weight-bold);
+  margin-top: var(--space-3);
+}
+.perfil-email {
+  font-size: var(--text-support-size);
+  opacity: 0.85;
+}
+
+.perfil-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-3) var(--space-3);
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 14px var(--space-3);
+  background: none;
+  border: none;
+  text-align: left;
+  font-family: var(--font-family);
+  font-size: var(--text-body-size);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.perfil-item--danger {
+  color: var(--color-danger);
+}
+
+.perfil-item__trailing {
+  margin-left: auto;
+}
+
+.perfil-divider {
+  height: 1px;
+  background: var(--color-line);
+  margin: var(--space-2) var(--space-3);
+}
+
+.perfil-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-4) var(--space-5);
+  font-family: var(--font-family);
+  font-size: var(--text-support-size);
+  color: var(--color-text-2);
+}
+.perfil-social__icons {
+  display: flex;
+  gap: var(--space-3);
+  color: var(--color-green);
+}
+.perfil-social__icons button {
+  display: flex;
+  border: none;
+  background: none;
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
+}

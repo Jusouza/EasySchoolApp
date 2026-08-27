@@ -1,0 +1,49 @@
+/*
+  EasySchool · ClipEscola — Design tokens: Cores
+  Extraídos de docs/layout/EasySchool.pdf (página "Design System"), com
+  confirmação por amostragem de pixel para os valores hexadecimais.
+*/
+:root {
+  /* Marca */
+  --color-green: #017336;
+  --color-green-dark: #015a2a;
+  --color-orange: #e8531c;
+  --color-yellow: #f5b21b;
+
+  /* Accents por módulo */
+  --color-accent-clips: #e8531c;
+  --color-accent-agenda: #3d9bd8;
+  --color-accent-calendario: #7c5cbf;
+  --color-accent-sala-de-aula: #e0447c;
+  --color-accent-entrada-saida: #017336;
+  --color-accent-clippag: #f5b21b;
+
+  /* Fundos soft (par de cada accent) */
+  --color-soft-clips: #fae9e0;
+  --color-soft-agenda: #e5f1fb;
+  --color-soft-calendario: #efeafa;
+  --color-soft-sala-de-aula: #fce7ef;
+  --color-soft-entrada-saida: #e4f2e9;
+  --color-soft-clippag: #fef3dc;
+
+  /* Superfícies e texto */
+  --color-bg: #fbf7f2;
+  --color-surface: #ffffff;
+  --color-line: #ebe3da;
+  --color-text: #2a2320;
+  --color-text-2: #6e645d;
+  --color-text-3: #a79c94;
+
+  /* Feedback */
+  --color-success: #12a150;
+  --color-danger: #d83a2e;
+  --color-orange-feedback: #e8531c;
+  --color-whatsapp: #25d366;
+
+  /* Fundos soft de tag de estado (amostrados da seção Sinalização) */
+  --color-open-soft: #fdebe2;
+  --color-danger-soft: #fbe7e5;
+
+  /* Sombra (usa $text em opacidade) */
+  --shadow-color: 42, 35, 32;
+}

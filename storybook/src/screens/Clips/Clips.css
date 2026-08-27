@@ -1,0 +1,108 @@
+.clips-filters {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.clips-day-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-pill);
+  padding: 10px 14px;
+  font-family: var(--font-family);
+  font-weight: var(--weight-bold);
+}
+.clips-day-nav button {
+  border: none;
+  background: transparent;
+  color: var(--color-text-2);
+  display: flex;
+  cursor: pointer;
+}
+
+.clips-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+
+.clips-stat-card {
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  font-family: var(--font-family);
+}
+.clips-stat-card__icon {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+.clips-stat-card__label {
+  font-size: 11px;
+  color: var(--color-text-2);
+  margin-bottom: 2px;
+}
+.clips-stat-card__value {
+  font-size: 13px;
+  font-weight: var(--weight-bold);
+}
+
+.clips-timeline-title {
+  font-size: var(--text-section-title-size);
+  font-weight: var(--weight-bold);
+}
+
+.clips-timeline {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.clips-timeline-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.clips-timeline-item__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.clips-timeline-item__time {
+  font-size: 11px;
+  color: var(--color-text-2);
+}
+.clips-timeline-item__title {
+  font-size: var(--text-body-size);
+  color: var(--color-text);
+}
+
+.clips-note {
+  background: var(--color-soft-entrada-saida);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  font-family: var(--font-family);
+}
+.clips-note__title {
+  color: var(--color-green-dark);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-support-size);
+  margin-bottom: 4px;
+}
+.clips-note__text {
+  font-size: var(--text-body-size);
+  color: var(--color-text);
+}

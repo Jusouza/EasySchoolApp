@@ -1,0 +1,90 @@
+.success-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--color-soft-entrada-saida);
+  color: var(--color-success);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.success-title {
+  font-size: 22px;
+  font-weight: var(--weight-bold);
+  text-align: center;
+}
+
+.success-description {
+  font-size: var(--text-body-size);
+  color: var(--color-text-2);
+  text-align: center;
+  line-height: var(--text-body-line);
+}
+
+.order-number-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  padding: var(--space-4);
+  font-family: var(--font-family);
+}
+.order-number-card__label {
+  font-size: var(--text-caption-size);
+  color: var(--color-text-2);
+}
+.order-number-card__value {
+  font-weight: var(--weight-bold);
+  font-size: var(--text-body-strong-size);
+}
+
+.checklist {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-family);
+}
+.checklist-item__icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.checklist-item__icon--done {
+  background: var(--color-success);
+  color: #ffffff;
+}
+.checklist-item__icon--active {
+  border: 2px solid var(--color-yellow);
+  color: var(--color-yellow);
+}
+.checklist-item__icon--pending {
+  border: 2px solid var(--color-line);
+}
+.checklist-item__title {
+  font-weight: var(--weight-bold);
+  font-size: var(--text-body-size);
+}
+.checklist-item__subtitle {
+  font-size: var(--text-caption-size);
+  color: var(--color-text-2);
+}
+.checklist-item--pending .checklist-item__title {
+  color: var(--color-text-3);
+}

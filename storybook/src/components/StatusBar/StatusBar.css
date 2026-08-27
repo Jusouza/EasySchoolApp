@@ -1,0 +1,17 @@
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 62px;
+  padding: 0 var(--space-5);
+  font-family: var(--font-family);
+  font-size: 17px;
+  font-weight: var(--weight-bold);
+  color: inherit;
+}
+
+.status-bar__icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

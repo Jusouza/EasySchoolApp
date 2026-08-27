@@ -1,0 +1,100 @@
+.cart-icon-btn {
+  position: relative;
+}
+.cart-icon-btn__badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.total-open-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-soft-entrada-saida);
+  border-radius: var(--radius-card);
+  padding: var(--space-4);
+  font-family: var(--font-family);
+}
+.total-open-card__label {
+  font-size: var(--text-caption-size);
+  color: var(--color-text-2);
+}
+.total-open-card__value {
+  font-size: var(--text-display-size);
+  font-weight: var(--weight-bold);
+  color: var(--color-green);
+}
+.total-open-card__pill {
+  background: var(--color-surface);
+  border-radius: var(--radius-pill);
+  padding: 6px 12px;
+  font-size: var(--text-caption-size);
+  font-weight: var(--weight-semibold);
+}
+
+.charge-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  padding: var(--space-4);
+  font-family: var(--font-family);
+}
+.charge-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-2);
+}
+.charge-card__title {
+  font-weight: var(--weight-bold);
+  font-size: var(--text-body-strong-size);
+}
+.charge-card__due {
+  font-size: var(--text-caption-size);
+  color: var(--color-text-2);
+  margin-top: 2px;
+}
+.charge-card__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.charge-card__value {
+  font-size: 20px;
+  font-weight: var(--weight-bold);
+  color: var(--color-text);
+}
+
+.uniform-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  background: var(--color-soft-clippag);
+  border-radius: var(--radius-card);
+  padding: var(--space-4);
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  font-family: var(--font-family);
+  width: 100%;
+}
+.uniform-banner__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-accent-clippag);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.uniform-banner__title {
+  font-weight: var(--weight-bold);
+  font-size: var(--text-body-strong-size);
+}
+.uniform-banner__description {
+  font-size: var(--text-caption-size);
+  color: var(--color-text-2);
+}

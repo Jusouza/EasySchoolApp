@@ -1,0 +1,128 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border: none;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-family);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: filter 120ms ease-out, opacity 120ms ease-out;
+  text-transform: none;
+}
+
+.btn:active:not(:disabled) {
+  filter: brightness(0.92);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+/* Sizes — G (rodapé de fluxo), M (dentro de cards), P (ação inline) */
+.btn--g {
+  height: 51px;
+  padding: 0 var(--space-6);
+  font-size: var(--text-body-strong-size);
+  font-weight: var(--weight-bold);
+}
+.btn--m {
+  height: 44px;
+  padding: 0 var(--space-5);
+  font-size: var(--text-body-strong-size);
+  font-weight: var(--weight-bold);
+}
+.btn--p {
+  height: 36px;
+  padding: 0 var(--space-4);
+  font-size: var(--text-support-size);
+  font-weight: var(--weight-bold);
+}
+.btn--full {
+  width: 100%;
+}
+
+/* Rótulo de botão primário em caixa alta; demais hierarquias em caixa normal */
+.btn--primary,
+.btn--primary-orange,
+.btn--destructive,
+.btn--whatsapp {
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.btn--primary {
+  background: var(--color-green);
+}
+.btn--primary-orange {
+  background: var(--color-orange);
+}
+.btn--destructive {
+  background: var(--color-danger);
+}
+.btn--whatsapp {
+  background: var(--color-whatsapp);
+}
+
+.btn--secondary {
+  background: transparent;
+  border: 1.5px solid var(--color-green);
+  color: var(--color-green);
+  text-transform: none;
+  font-weight: var(--weight-semibold);
+}
+
+.btn--text {
+  background: transparent;
+  color: var(--color-green);
+  height: auto;
+  padding: var(--space-1) var(--space-2);
+  font-weight: var(--weight-semibold);
+  text-transform: none;
+}
+
+.btn--icon {
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--color-soft-entrada-saida);
+  color: var(--color-green);
+}
+.btn--icon.btn--icon-filled {
+  background: var(--color-green);
+  color: #ffffff;
+}
+.btn--icon.btn--icon-ghost {
+  background: transparent;
+  color: var(--color-text-2);
+}
+
+.btn:disabled.btn--primary,
+.btn:disabled.btn--primary-orange,
+.btn:disabled.btn--destructive,
+.btn:disabled.btn--whatsapp {
+  background: var(--color-line);
+  color: var(--color-text-3);
+}
+.btn:disabled.btn--secondary {
+  border-color: var(--color-line);
+  color: var(--color-text-3);
+}
+
+.btn__spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #ffffff;
+  animation: btn-spin 700ms linear infinite;
+}
+
+@keyframes btn-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
